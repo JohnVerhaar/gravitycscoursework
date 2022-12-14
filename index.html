@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gravity</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/p5.play.js"></script>
+
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+    <script src="player.js"></script>
+    <script src="item.js"></script>
+
+    <!-- exporting to a file that gets downloaded code <button id="b">export to CSV</button>
+    <script type="text/javascript">
+        function exportToCsv() {
+            var myCsv = "Col1,Col2,Col3\nval1,val2,val3";
+
+            window.open('data:text/csv;charset=utf-8,' + escape(myCsv));
+        }
+
+        var button = document.getElementById('b');
+        button.addEventListener('click', exportToCsv);
+    </script>-->
+
+    <button id="readFileButton" style="display:block;width:120px; height:30px;" onclick="document.getElementById('readFile').click()">Upload TAS</button>
+    <input id="readFile" type="file" name="readfile" style="display:none">
+    <!---- TAS READER<script type="text/javascript">
+      let file = document.getElementById("readfile");
+      file.addEventListener("change", function () {
+        var reader = new FileReader();
+        reader.onload = function (progressEvent) {
+          console.log(this.result);
+        };
+        reader.readAsText(this.files[0]);
+      });
+    </script>-->
+  </body>
+</html>
